@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Formatações</title>
+</head>
+<body>
+    <h1>PRINCIPAIS FORMATAÇÕES</h1>
+    <br>
+    <H2>Negrito/Destaque</H2>
+    <p>Nessa frase temos uma parte do texto em <b>negrito</b> usando a tag b (Não Semântica)</p>
+    <p>Nessa frase temos uma parte do texto em <strong>negrito</strong> usando a tag strong (Com Semântica) </p>
+    <br>
+    <H2>Itálico/Ênfase</H2>
+    <p>Nessa frase temos uma parte do texto em <i>itálico</i> usando a tag i (Não Semântica)</p>
+    <p>Nessa frase temos uma parte do texto em <em>itálico</em> usando a tag em (Com Semântica)</p>
+    <br>
+    <h2>Texto Marcador</h2>
+    <p>Nessa frase temos uma parte do texto <mark style="background-color: rgb(164, 236, 133);">marcado</mark> usando a
+        tag mark</p>
+    <p>Nessa frase temos uma parte do texto <mark style="background-color:aquamarine;">marcado</mark> usando a tag mark
+    </p>
+    <br>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Nessa frase temos uma parte do texto <big>Grande</big> e uma parte <small>Pequena</small> ...</p>
+    <br>
+    <h2>Texto Deletado</h2>
+    <p>Nessa frase temos uma parte do texto <strike>deletada</strike> usando a tag striker (Não Semântica)</p>
+    <p>Nessa frase temos uma parte do texto <del>deletada</del> usando a tag del (Com Semântica)</p>
+    <br>
+    <h2>Texto Inserido</h2>
+    <p>Nessa frase temos uma parte do texto <u>inserida</u> usando a tag u (Não Semântica)</p>
+    <p>Nessa frase temos uma parte do texto <ins>inserida</ins> usando a tag ins (Com Semântica)</p>
+    <br>
+    <h2>Texto Sobrescrito</h2>
+    <p>Nessa frase temos uma parte do texto <sup>sobrescrita</sup> usando a tag sup (Com Semântica)</p>
+    <br>
+    <h2>Texto Subscrito</h2>
+    <p>Nessa frase temos uma parte do texto <sub>subscrita</sub> usando a tag sub (Com Semântica)</p>
+    <br>
+    <h2>Trecho de Código</h2>
+    <p>Abaixo, temos um exemplo de trecho de código entre as tags pre e code</p>
+    <br>
+    <pre>
+        <code> function resolverEquacaoSegundoGrau(a, b, c) {
+    if (a === 0) {
+        console.log("Isso não é uma equação de segundo grau.");
+        return;
+    }
+
+    const delta = b * b - 4 * a * c;
+
+    console.log("Delta:", delta);
+
+    if (delta < 0) {
+        console.log("A equação não possui raízes reais.");
+    } else if (delta === 0) {
+        const x = -b / (2 * a);
+        console.log("A equação possui uma raiz real:");
+        console.log("x =", x);
+    } else {
+        const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+        console.log("A equação possui duas raízes reais:");
+        console.log("x1 =", x1);
+        console.log("x2 =", x2);
+    }
+}
+
+// Exemplo de uso
+resolverEquacaoSegundoGrau(1, -3, 2);</code>
+    </pre>
+    <br>
+    <h2>Citações (quotations) simples</h2>
+    <p>O herói fictício disse, uma vez, <cite>“Eu sorrio para mostrar a pressão dos heróis e enganar o medo dentro de
+            mim.”</cite></p>
+    <br>
+    <h2>Citações Completas (livros)</h2>
+    <p>Lewis Carroll, em seu livro Alice no País das Maravilhas, diz: </p>
+    <blockquote cite="https://www.ebooksbrasil.org/adobeebook/alicep.pdf"> "Quando acordei hoje de manhã, eu sabia quem
+        eu era, mas acho que já mudei muitas vezes desde então."</blockquote>
+    </blockquote>
+    <br>
+    <h2>Abreviações</h2>
+    <p>Estamos estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascate Style Sheet">CSS</abbr></p>
+    <br>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="ltr">Estou estudando HTML</bdo></p>
+    <p><bdo dir="rtl">Estou estudando HTML</bdo></p>
+</body>
+
+</html>
